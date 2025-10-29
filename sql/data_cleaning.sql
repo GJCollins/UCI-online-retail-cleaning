@@ -2,6 +2,11 @@
 -- CREATE CLEANED DATA TABLE
 -- ==========================
 
+-- Purpose: Build analysis-ready clean table (retail focus)
+-- Input: retail.online_retail_raw / retail.online_retail_raw_deduped
+-- Output: retail.online_retail_clean
+-- Engine: PostgreSQL 14+
+
 DROP TABLE IF EXISTS retail.online_retail_clean CASCADE;
 
 CREATE TABLE retail.online_retail_clean AS
@@ -32,9 +37,9 @@ WHERE
 
 -- Updated Table Taking 1% Outliers From Filtered Table (new version)
 
-DROP TABLE IF EXISTS retail.online_retail_clean2 CASCADE;
+DROP TABLE IF EXISTS retail.online_retail_clean CASCADE;
 
-CREATE TABLE retail.online_retail_clean2 AS
+CREATE TABLE retail.online_retail_clean AS
 WITH filtered AS (
     SELECT 
         invoice_no,
