@@ -39,8 +39,6 @@ If you have issues with COPY command, use pgAdmin's Import tool
 4) Build clean tables
    \i sql/data_cleaning.sql
 
--- (Use your preferred method to load data/raw/Online Retail.xlsx into retail.online_retail_raw)
-
 ## Outputs
 
 outputs/cleaning_summary.xlsx – before/after metrics
