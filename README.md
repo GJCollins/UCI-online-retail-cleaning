@@ -2,6 +2,8 @@
 
 **Goal:** Build an analysis-ready dataset from the UCI Online Retail data by detecting and remediating data quality issues (missing IDs, duplicates, returns, zero/negative prices, extreme outliers), and document the business impact of each decision.
 
+**Outcome:** Cleaned and validated 540K retail transactions (UCI Online Retail dataset) using SQL to ensure analysis-ready data for customer segmentation. Removed 28% of low-quality records and 31% of revenue while retaining 98% of customers.
+
 ## Highlights 
 - **Reproducible SQL pipeline** from raw → deduped → clean with indexes and validation.
 - **Quantified impacts** on rows and revenue for each cleaning rule.
