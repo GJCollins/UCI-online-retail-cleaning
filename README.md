@@ -8,7 +8,10 @@
 - **Reproducible SQL pipeline** from raw → deduped → clean with indexes and validation.
 - **Quantified impacts** on rows and revenue for each cleaning rule.
 - **Business framing:** isolate retail behavior vs. wholesale to improve segmentation and CLV reliability.
-- **Documentation-first:** full Data Quality Assessment in `/docs/`.
+
+[View Full Report (PDF)](docs/Data_Quality_Assessment_Report.pdf)
+
+[Download Clean Dataset (Sample)](outputs/sample_clean.csv)
 
 ## Repo structure
 - sql/ data_quality_checks.sql, data_cleaning.sql
